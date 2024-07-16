@@ -1,0 +1,17 @@
+->Here I used DataBricks to create multiple ETL pipelines using the Python API of Apache Spark i.e. PySpark.
+
+->I have used sources like CSV, Parquet, and Delta Table then used Factory Pattern to create the reader class.
+Factory Pattern is one of the most used Low-Level designs in Data Engineering pipelines that involve multiple sources.
+
+->Then I used PySpark DataFrame API and Spark SQL to write the business transformation logic.
+In the loader part, I have loaded data into two fashion one using DataLake and another by Data LakeHouse. 
+
+->Here I apply mainly 3 steps in notebooks which perform extract, transform and load.
+
+Step1-Extract all required data from different source.
+Step2-Implement the Transformation logic.
+Step3-Load all required data to differnt sink.
+
+Brief-Firstly, I make the Workflow notebook which consist of 2 class with flows select one.I can also make use of widgets in databricks to enter value by user.
+Input the files of format delta and csv.Secondly, create 2 transform functions which will make use of partition,filter, broadcast join ,aggregate logic
+to transform the tables.Finally, the dataframe is loaded in different format to the target locations.
